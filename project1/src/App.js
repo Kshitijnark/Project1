@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Features from './pages/Features';
 import SSignup from './pages/Signup/SSignup';
+import FSignup from './pages/Signup/FSignup';
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/contact" element={<Contact/>} />
       <Route exact path="/feature" element={<Features/>} />
       <Route exact path="/ssignup" element={<SSignup/>} />
+      <Route exact path="/fsignup" element={<FSignup/>} />
    
       <Route exact path="/about" element={<About/>} />
 </Routes>

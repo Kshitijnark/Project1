@@ -7,7 +7,7 @@
 }
 .ssignupbg{
     width: 100vw;
-    height: 150vh;
+    height: 170vh;
     background-color:rgb(202, 209, 215);
 
 }
@@ -33,10 +33,12 @@ input,select{
     padding-bottom: 1vh;
 
 }
-.logo{
+.logo1{
     position: relative;
     top: 3vh;
     left:10vw;
+    width: 12vw;
+    height: 8vh;
 }
 .subhead{
     width: 22vw;
