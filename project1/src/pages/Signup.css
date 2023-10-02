@@ -1,0 +1,57 @@
+.col1{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(178, 251, 178);
+}
+.col2{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(240, 178, 251); */
+}
+.colhead{
+    position: absolute;
+    top: 32vh;
+    left: 18vw;
+    font-size: 5vh;
+    font-weight: bold;
+}
+.line{
+    width: 15vw;
+    height: 1vh;
+    background-color: black;
+    position: absolute;
+    top: 45vh;
+    left: 17vw;
+}
+.colsubhead{
+    position: absolute;
+    top: 48vh;
+    left: 10vw;
+    width: 30vw;
+    font-size: 3vh;
+    text-align: center;
+}
+.signupbutton{
+    position: absolute;
+    top: 67vh;
+    left: 18vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    background-color: rgb(0, 141, 56);
+    color: rgb(255, 255, 255);
+    border-radius: 3vh;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+}
+.already{
+  position: absolute;
+  top: 77vh;
+  left: 12vw;
+  font-size: 3vh;
+}

@@ -1,0 +1,83 @@
+.head{
+    position: relative;
+    top: 3vh;
+    left: 5vw;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+.ssignupbg{
+    width: 100vw;
+    height: 150vh;
+    background-color:rgb(202, 209, 215);
+
+}
+.form{
+    width:33vw;
+    position: relative;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    top: 13vh;
+    left: 33vw;
+    border-color: black;
+    border-style:double;
+    /* border-radius: 5vh; */
+}
+.atr{
+    position: relative;
+    left: 3vh;
+}
+input,select{
+    width: 30vw;
+    border-radius: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+.logo{
+    position: relative;
+    top: 3vh;
+    left:10vw;
+}
+.subhead{
+    width: 22vw;
+    position: relative;
+    left: 5.5vw;
+    text-align: center;
+}
+.atr1{
+    font-size: 2.5vh;
+
+}
+.submit{
+    position: relative;
+    left: 5vw;
+    width: 10vw;
+    margin: 3vh;
+    background-color: rgb(123, 156, 184);
+}
+.reset{
+    position: relative;
+    left: 5vw;
+    width: 10vw;
+    background-color: #d2a2a2;
+    
+}
+.checkbox{
+    position: relative;
+    left: 8vw;
+    top: 2vh;
+}
+.confirm{
+    position: relative;
+    top: -3vh;
+    left: 3vh;
+}
+.home{
+    position: relative;
+    text-decoration: none;
+    left:2vw;
+    top: 2vh;
+    width: 20vw;
+    background-color: #97c4b9;
+    border-radius: 1vh;
+}
