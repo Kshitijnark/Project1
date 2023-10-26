@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Features from './pages/Features';
 import SSignup from './pages/Signup/SSignup';
 import FSignup from './pages/Signup/FSignup';
+import StudentHome from './LSpace(refer only)/StudentHome';
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/feature" element={<Features/>} />
       <Route exact path="/ssignup" element={<SSignup/>} />
       <Route exact path="/fsignup" element={<FSignup/>} />
+      <Route exact path="/atharva" element={<StudentHome/>} />
    
       <Route exact path="/about" element={<About/>} />
 </Routes>

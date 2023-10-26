@@ -15,9 +15,9 @@ export default function SSignup()  {
   const [addrtype, setAddrType] = useState('unknown')
   const handleSubmit=(e) =>{
     e.preventDefault();
-    axios.post('http://localhost:3001/ssignup',{name,email,password,birthdate,institutename,instituteid,addrtype})
-    .then(result=>console.log(result))
-    .catch(err=>console.log(err))
+    axios.post('http://192.168.82.167:3001/ssignup',{name,email,password,birthdate,institutename,instituteid,addrtype})
+    .then(result=>alert(result))
+    .catch(err=>alert(err))
   }
     return (
     <>
@@ -41,9 +41,9 @@ export default function SSignup()  {
            <select type="text" className='atr'
                   defaultValue={addrtype}
                   onChange={(e)=>setAddrType(e.target.value)}>
-              <option selected value="FYBtech">FY B.Tech</option>
-              <option value="SY">SY B.Tech</option>
-              <option value="TY">TY B.Tech</option>
+              <option selected value="FYBtech">FY_B.Tech</option>
+              <option value="SY">SY_B.Tech</option>
+              <option value="TY">TY_B.Tech</option>
               <option value="FE">B.Tech</option>
               <option value="9th">9th</option>
               <option value="10th">10th</option>
