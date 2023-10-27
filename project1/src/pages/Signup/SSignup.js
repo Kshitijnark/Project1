@@ -1,7 +1,7 @@
 import React,{Component,useState} from 'react'
 import './SSignup.css'
 import Navbar from '../../components/Navbar'
-import { Form, Link } from 'react-router-dom'
+import { Form, Link ,useNavigate} from 'react-router-dom'
 import logo from '../../images/logo.png'
 import { Icon } from '@iconify/react'
 import axios from 'axios'
@@ -12,12 +12,14 @@ export default function SSignup()  {
   const [institutename, setInstitutename] = useState();
   const [instituteid, setInstituteid] = useState();
   const [birthdate, setBirthdate] = useState();
-  const [addrtype, setAddrType] = useState('unknown')
+  const [addrtype, setAddrType] = useState();
+  const navigate=useNavigate();
   const handleSubmit=(e) =>{
     e.preventDefault();
-    axios.post('http://192.168.82.167:3001/ssignup',{name,email,password,birthdate,institutename,instituteid,addrtype})
-    .then(result=>alert(result))
-    .catch(err=>alert(err))
+    axios.post('http://localhost:3001/ssignup',{name,email,password,birthdate,institutename,instituteid,addrtype})
+    .then(result=>console.log(result))
+    .catch(err=>console.log(err))
+    navigate('/login');
   }
     return (
     <>
@@ -39,12 +41,12 @@ export default function SSignup()  {
           <input type='text' className='atr' placeholder='Institute ID' name='instituteid' onChange={(e)=>setInstituteid(e.target.value)} required/>
            <p className='atr atr1'>Grade</p> 
            <select type="text" className='atr'
-                  defaultValue={addrtype}
+                  defaultValue='TYBtech'
                   onChange={(e)=>setAddrType(e.target.value)}>
-              <option selected value="FYBtech">FY_B.Tech</option>
-              <option value="SY">SY_B.Tech</option>
-              <option value="TY">TY_B.Tech</option>
-              <option value="FE">B.Tech</option>
+              <option value="FYBtech">FY B.Tech</option>
+              <option value="SYBtech">SY B.Tech</option>
+              <option value="TYBtech">TY B.Tech</option>
+              <option value="Btech">B.Tech</option>
               <option value="9th">9th</option>
               <option value="10th">10th</option>
               <option value="11th">11th</option>
@@ -56,7 +58,7 @@ export default function SSignup()  {
         
           <input type='checkbox' className='checkbox' placeholder='Retype password'></input>
           <p className=' atr1 confirm required'>Confirm, Accept our terms and policy.</p> */}
-          <button className='submit' type='submit' placeholder='Create Account'></button>
+          <button className='submit' type='submit' placeholder='Create Account'>Create Account</button>
           <input className='reset' type='reset'></input>
         </form>
     </div>

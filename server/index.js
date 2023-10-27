@@ -1,7 +1,8 @@
 const express=require("express");
 const mongoose=require('mongoose')
 const cors=require("cors")
-const StudentModel=require('./models/Students')
+const StudentModel=require('./models/Students');
+const FacultyModel = require("./models/Faculties");
 const app=express()
 app.use(express.json())
 app.use(cors())
@@ -37,6 +38,11 @@ app.post('/ssignup',(req,res)=>{
         StudentModel.create(req.body)
         .then(students=>res.json(students))
         .catch(err=>res.json(err))
+})
+app.post('/fsignup',(req,res)=>{
+    FacultyModel.create(req.body)
+    .then(faculties=>res.json(faculties))
+    .catch(err=>res.json(err))
 })
 app.listen(3001,()=>{
     console.log("Server is Running");

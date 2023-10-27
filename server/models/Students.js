@@ -9,5 +9,5 @@ const StudentSchema =new mongoose.Schema({
     addrtype:String,
 })
 
-const StudentModel =mongoose.model("LearnSpace",StudentSchema)
+const StudentModel =mongoose.model("students",StudentSchema)
 module.exports=StudentModel
