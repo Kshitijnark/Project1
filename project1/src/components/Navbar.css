@@ -2,7 +2,7 @@
     width: 100%;
     height: 10vh;
     position: fixed;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 2vh;
     z-index: 5;
 }

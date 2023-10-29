@@ -1,0 +1,53 @@
+.navhome{
+    position: fixed;
+    margin-left: 2.5vw;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+}
+.logohome{
+    width: 13vw;
+    height: 6vh;
+}
+.logo-position-home{
+    margin-left: 1.5vw;
+}
+.ham-nav{
+    margin-top: 0.75vh;
+}
+.searchbar{
+   
+    width: 100%;
+    padding: 08px 20vw 8px 8px;
+    display: block;
+    border-radius:2vh;
+}
+.input-search{
+    margin-left: 2.5vw;
+    background-color: "#696969";
+}
+.bell-icon{
+    margin-left: 32vw;
+    margin-top: 0.75vh;
+}
+.dots-icon{
+    margin-left: 1.5vw;
+    margin-top: 0.75vh;
+}
+.profile-photo{
+    margin-left: 1.5vw;
+    margin-top: 0.5vh;
+}
+
+.magnify {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 20px;
+    position: relative;
+    top: -7vh;
+    left: 48vw;
+    padding: 18px 20px;
+    z-index: 5;
+  }

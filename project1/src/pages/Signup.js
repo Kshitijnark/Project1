@@ -20,7 +20,7 @@ export default function Signup() {
     <p className='colsubhead'>Sign up for only faculties to access cloud based classroom with easy and efficient monitoring of students (multiple subjects)
       </p>
       <Link className="signupbutton" to={"/fsignup"}  >Sign up</Link>
-      <p className='already'>Already have a account ? <Link  to={"/login"}  >login here.</Link></p>
+      <p className='already'>Already have a account ? <Link  to={"/flogin"}  >login here.</Link></p>
     </div>
     </>
   )
